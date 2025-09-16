@@ -1,0 +1,18 @@
+export type FormFieldNames =
+  | "date_of_birth"
+  | "full_name"
+  | "email"
+  | "phone"
+  | "optional_phone"
+  | "payment_method"
+  | "comment"
+  | "accept_terms"
+  | "privacy_policy"
+  | "pick_up_location"
+  | "pick_up_location_details"
+  | "drop_off_city"
+  | "drop_off_location"
+  | "drop_off_location_details"
+  | "country_code"
+  | "country_code_optional"
+  | "additional_services";
