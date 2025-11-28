@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Car Rental Web Application
 
-First, run the development server:
+A modern car rental web application built with Next.js, TypeScript, MUI, and Zustand. This project allows users to browse cars, make bookings, and manage rentals.
+
+
+### Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+`NEXT_PUBLIC_API_UR` - d4aef80eb2ef9dd071329f00f1c3760651f6304b
+
+`NEXT_PUBLIC_BASE_URL` - http://127.0.0.1:8000
+
+
+## Installation
+
+Install car-rental-frontend with npm
+
+#### Requirements
+Make sure you have:
+
+Node.js (v18+) - https://nodejs.org/en/download
+
+Git - https://git-scm.com/install/
+
+#### Clone the Project
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  git clone https://github.com/Ninunutsi/car-rental-frontend
+  cd car-rental-frontend
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### Install Dependencies
+```bash
+  npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+#### Create Environment Variables
+Inside the project root, create a file named .env:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+`NEXT_PUBLIC_API_UR` - d4aef80eb2ef9dd071329f00f1c3760651f6304b
+`NEXT_PUBLIC_BASE_URL` - http://127.0.0.1:8000
 
-## Learn More
+#### Run the Project
+Start the development server:
+```bash
+  npm run dev
+```
+Open in your browser: http://localhost:3000
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Troubleshooting
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Ensure Node.js and Git are installed
 
-## Deploy on Vercel
+- Delete node_modules and reinstall:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+ rm -rf node_modules
+ npm install
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Check .env values
+
+- Restart the terminal
+
+
+### Technologies Used
+
+- Next.js (React + TypeScript)
+
+- Zustand
+
+- React hook form, Zod
+
+- MUI, Framer Motion
+
+## Project Structure
+
+| Folder             | Description                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| /components | Reusable components |
+| /app    | application navigation |
+| /constants | constants used in the app |
+| /libs/CarsList | helper funcitons |
+| /modules | complex ui components |
+| /store | zustand store |
+| /styles | global pallette |
+| /utils | helpers(hooks, schemas, types) |
+| /views | pages |
+
+
